@@ -1,0 +1,95 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr1a5_healths",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr1a5_health",
+    "MaxGetRowsCount": 500,
+    "Name": "Health",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr1a5_health_AsyncOperations": "System Jobs",
+      "cr1a5_health_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr1a5_health_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr1a5_health_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr1a5_health_ProcessSession": "Process Sessions",
+      "cr1a5_health_SyncErrors": "Sync Errors",
+      "cr1a5_healthid": "Health",
+      "cr1a5_name": "Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Health",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Health (Views)",
+    "Name": "_cr1a5_health_views",
+    "RelatedEntityName": "Health",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "271adf7d-4220-4ec9-8342-8a9b82be1352": "Health Associated View",
+      "4079b10c-e7dd-4891-947a-7134044e0047": "Health Lookup View",
+      "8c6224cf-cea1-45cf-841f-566fcf43c115": "Active Health",
+      "a02064b9-ab7f-4491-acf3-9392dd045fcd": "Health Advanced Find View",
+      "c564ccd6-8c5e-4b99-99d2-cc7110a02c40": "Inactive Health"
+    }
+  },
+  {
+    "DisplayName": "Status (Health)",
+    "Name": "cr1a5_health_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Health"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Health",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Health)",
+    "Name": "cr1a5_health_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Health"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Health",
+    "Type": "OptionSetInfo"
+  }
+]

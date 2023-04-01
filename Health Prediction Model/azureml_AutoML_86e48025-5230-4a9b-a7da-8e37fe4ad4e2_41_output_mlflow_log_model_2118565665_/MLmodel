@@ -1,0 +1,24 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.8.16
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 0.22.1
+mlflow_version: 2.1.1
+model_uuid: a4c491f3cc9240849f577313f86d894e
+run_id: AutoML_86e48025-5230-4a9b-a7da-8e37fe4ad4e2_41
+signature:
+  inputs: '[{"name": "age", "type": "integer"}, {"name": "sex", "type": "string"},
+    {"name": "bmi", "type": "float"}, {"name": "children", "type": "integer"}, {"name":
+    "smoker", "type": "string"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2023-03-24 10:37:17.171979'
