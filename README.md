@@ -1,5 +1,7 @@
 # Health Expense Planner
 
+## Solving for India Challenge: DTU
+
 ## Summary
 
 This app allows the user to predict their Health Expense using a Machine Learning Model and then get a detailed personalized plan to save funds for it.
